@@ -1,3 +1,4 @@
+import { AppLanguage } from './../utils/AppLanguage';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeScreenComponent implements OnInit {
 
+  
+  private appLanguage = AppLanguage;
+
+  bgLanguage:boolean;
+  enLanguage:boolean;
+  
   constructor() { }
 
   ngOnInit(): void {
+   this.bgLanguage = false;
+   this.enLanguage = true;
   }
+
+
 
 }
