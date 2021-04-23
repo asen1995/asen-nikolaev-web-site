@@ -22,5 +22,14 @@ export class HomeScreenComponent implements OnInit {
   }
 
 
+  changeLanguage(language : string){
+    if(language === 'en'){
+      this.bgLanguage = false;
+      this.enLanguage = true;
+    }else if(language === 'bg'){
+      this.bgLanguage = true;
+      this.enLanguage = false;
+    }
+  }
 
 }

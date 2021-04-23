@@ -1,3 +1,9 @@
+<div id="flags-box">
+    <img class="bg-flag" src="/assets/flags/bg.jpg" (click)="changeLanguage('en')" />
+
+    <img class="en-flag" src="/assets/flags/en.jpg" (click)="changeLanguage('bg')" />
+
+</div>
 <div id="adminDiv" *ngIf="bgLanguage">
 
     <div class="pic-name">
@@ -17,7 +23,7 @@
 
 <div id="adminDiv" *ngIf="enLanguage">
 
-   
+
 
     <div class="pic-name">
         <img src="/assets/asen-costume.jpg" />
