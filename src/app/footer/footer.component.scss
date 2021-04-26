@@ -6,22 +6,41 @@ footer {
     background-color: rgb(100, 100,109);
     color: white;
     text-align: center;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
  }
 
  #facebook{
-    width: 9.7%;
-    height: 9.7%;
+    width: 5.7%;
+    height: 5.7%;
  }
 
  #linkedin{
-    width: 9.7%;
-    height: 9.7%;
+    width: 5.7%;
+    height: 5.7%;
  }
 
  
  #footer-line{
     width: 50%;
     text-align: center;
+ }
+
+ @media only screen and (max-width: 500px) {
+   footer{ 
+      padding-top: 4%;
+      padding-bottom: 4%;
+   }
+
+   #facebook{
+      width: 9.7%;
+      height: 9.7%;
+   }
+  
+   #linkedin{
+      width: 9.7%;
+      height: 9.7%;
+   }
+  
+
  }
