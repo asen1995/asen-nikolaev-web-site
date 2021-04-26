@@ -1,4 +1,3 @@
-
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
     <ul>
         <li><a href="#home">За мен</a></li>
@@ -11,13 +10,30 @@
 
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
     <ul>
-        <li><a href="#home">About me</a></li>
-        <li><a href="#news">Education</a></li>
-        <li><a href="#contact">Proffesional career</a></li>
-        <li><a href="#about">Projects</a></li>
+        <li><a href="#home" (click)="changeNavContent(navigationContentType.AboutMe)">About me</a></li>
+        <li><a href="#news" (click)="changeNavContent(navigationContentType.Education)">Education</a></li>
+        <li><a href="#contact" (click)="changeNavContent(navigationContentType.ProffesionalCareer)">Proffesional career</a></li>
+        <li><a href="#about" (click)="changeNavContent(navigationContentType.Projects)">Projects</a></li>
     </ul>
 </div>
 
 
 
+<div *ngIf="appLanguage == appLanguageEnum.English">
 
+    <div class="navigation-content-container">
+        <div *ngIf="navigationContentChoosen == navigationContentType.AboutMe">
+            Born in small city of Lom in Bulgaria.
+        </div>
+
+        <div *ngIf="navigationContentChoosen == navigationContentType.Education">
+            Master of Engineering at the Technical University of Sofia 2020
+        </div>
+        <div *ngIf="navigationContentChoosen == navigationContentType.ProffesionalCareer">
+            ProffesionalCareer
+        </div>
+        <div *ngIf="navigationContentChoosen == navigationContentType.Projects">
+            Projects
+        </div>
+    </div>
+</div>

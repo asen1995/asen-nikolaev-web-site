@@ -1,5 +1,6 @@
 import { AppLanguage } from './../utils/AppLanguage';
 import { Component, OnInit,Input } from '@angular/core';
+import { NavigationContentType } from '../utils/NavigationContentType';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -11,9 +12,17 @@ export class NavigationBarComponent implements OnInit {
   appLanguageEnum = AppLanguage;
   @Input() appLanguage: AppLanguage;
 
+  navigationContentType = NavigationContentType;
+  navigationContentChoosen: NavigationContentType;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  changeNavContent(navigationContentChoosen: NavigationContentType){
+    this.navigationContentChoosen = navigationContentChoosen;
+  }
+  
 }
