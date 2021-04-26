@@ -4,7 +4,9 @@
     <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
 
 </div>
-<div id="adminDiv" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
+
+
+<div class="profile-div" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
 
     <div class="pic-name">
         <img class="profile-picture" src="assets/asen-costume.jpg" />
@@ -22,7 +24,7 @@
 
 </div>
 
-<div id="adminDiv" *ngIf="appLanguage == appLanguageEnum.English">
+<div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
 
 
 
