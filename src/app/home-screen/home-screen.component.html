@@ -2,9 +2,7 @@
     <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
 
     <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
-
 </div>
-
 
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
 
@@ -13,32 +11,14 @@
         <p class="text-name">Асен Николаев</p>
         <p class="text-name">Софтуерен инженер</p>
     </div>
-
-
-    <ul>
-        <li><a href="#home">За мен</a></li>
-        <li><a href="#news">Образование</a></li>
-        <li><a href="#contact">Професионален опит</a></li>
-        <li><a href="#about">Проекти</a></li>
-    </ul>
-
 </div>
 
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
-
-
-
     <div class="pic-name">
-        <img  class="profile-picture" src="assets/asen-costume.jpg" />
+        <img class="profile-picture" src="assets/asen-costume.jpg" />
         <p class="text-name">Asen Nikolaev</p>
         <p class="text-name">Software engineer</p>
     </div>
-
-    <ul>
-        <li><a href="#home">About me</a></li>
-        <li><a href="#news">Education</a></li>
-        <li><a href="#contact">Proffesional career</a></li>
-        <li><a href="#about">Projects</a></li>
-    </ul>
-
 </div>
+
+<app-navigation-bar [appLanguage]="appLanguage"></app-navigation-bar>
