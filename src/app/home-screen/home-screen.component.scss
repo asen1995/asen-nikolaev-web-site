@@ -3,8 +3,12 @@
   font-size: 150%;
 }
 
+.profile-div{
+  margin-left: 43%;
+}
+
 #flags-box{ 
-  margin-left: 50%;
+  // margin-left: 50%;
   padding-bottom: 1%;
 }
 
@@ -12,9 +16,6 @@
   border-radius: 50%;
 }
 
-.profile-div{
-  margin-left: 50%;
-}
 
 .en-flag{ 
   width: 58px;
@@ -22,4 +23,11 @@
 }
 .bg-flag{
   width: 50px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .profile-div{
+    margin-left: 34%;
+  }
 }

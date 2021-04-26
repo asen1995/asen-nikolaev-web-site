@@ -1,11 +1,11 @@
-<div id="flags-box">
-    <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
 
-    <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
-</div>
 
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
-
+        <div id="flags-box">
+                <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
+            
+                <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
+            </div>
     <div class="pic-name">
         <img class="profile-picture" src="assets/asen-costume.jpg" />
         <p class="text-name">Асен Николаев</p>
@@ -14,6 +14,11 @@
 </div>
 
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
+        <div id="flags-box">
+                <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
+            
+                <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
+            </div>
     <div class="pic-name">
         <img class="profile-picture" src="assets/asen-costume.jpg" />
         <p class="text-name">Asen Nikolaev</p>
