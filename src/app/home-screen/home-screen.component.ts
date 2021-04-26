@@ -8,28 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeScreenComponent implements OnInit {
 
-  
-  private appLanguage = AppLanguage;
+  appLanguageEnum = AppLanguage;
+  appLanguage :AppLanguage;
 
-  bgLanguage:boolean;
-  enLanguage:boolean;
-  
   constructor() { }
 
-  ngOnInit(): void {
-   this.bgLanguage = false;
-   this.enLanguage = true;
+  ngOnInit(): void {  
+   this.appLanguage = AppLanguage.English;
   }
 
 
-  changeLanguage(language : string){
-    if(language === 'en'){
-      this.bgLanguage = false;
-      this.enLanguage = true;
-    }else if(language === 'bg'){
-      this.bgLanguage = true;
-      this.enLanguage = false;
-    }
+  changeLanguage(appLanguage : AppLanguage){
+    this.appLanguage = appLanguage;
   }
 
 }

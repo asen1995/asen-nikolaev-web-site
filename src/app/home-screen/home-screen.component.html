@@ -1,10 +1,10 @@
 <div id="flags-box">
-    <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage('bg')" />
+    <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
 
-    <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage('en')" />
+    <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
 
 </div>
-<div id="adminDiv" *ngIf="bgLanguage">
+<div id="adminDiv" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
 
     <div class="pic-name">
         <img src="assets/asen-costume.jpg" />
@@ -22,7 +22,7 @@
 
 </div>
 
-<div id="adminDiv" *ngIf="enLanguage">
+<div id="adminDiv" *ngIf="appLanguage == appLanguageEnum.English">
 
 
 
