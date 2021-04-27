@@ -1,11 +1,11 @@
+.profile-div{
+  margin-top: 1%;
+  text-align: center;
+}
+
 .text-name{ 
   color:white;
   font-size: 150%;
-}
-
-.profile-div{
-  margin-left: 43%;
-  margin-top: 1%;
 }
 
 #flags-box{ 
@@ -24,11 +24,4 @@
 }
 .bg-flag{
   width: 50px;
-}
-
-
-@media only screen and (max-width: 500px) {
-  .profile-div{
-    margin-left: 34%;
-  }
 }
