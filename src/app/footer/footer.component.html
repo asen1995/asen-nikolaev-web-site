@@ -1,13 +1,15 @@
-<footer>    
+<footer>
     <a href="https://www.facebook.com/asen.nikolaev.3/" target="popup">
         <img id="facebook" src="assets/facebook.jpg" />
     </a>
-    
+
     <a href="https://www.linkedin.com/in/asen-nikolaev-414586133/" target="popup">
         <img id="linkedin" src="assets/linkedin.jpg" />
     </a>
 
     <hr id="footer-line">
 
-    © 2021 Asen Nikolaev
+    <div *ngIf="appLanguage == appLanguageEnum.Bulgarian">© 2021 Асен Николаев </div>
+    <div *ngIf="appLanguage == appLanguageEnum.English">© 2021 Asen Nikolaev </div>
+
 </footer>
