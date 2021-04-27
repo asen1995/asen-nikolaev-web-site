@@ -4,11 +4,15 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    
+    list-style-type:none;
+    display:flex;
+    justify-content: center;    
   }
   
-  li {
-    float: left;
+  li {   
+  display: list-item;
+  background: rgb(100, 100,109); 
+  color:white;  
   }
   
   li a {

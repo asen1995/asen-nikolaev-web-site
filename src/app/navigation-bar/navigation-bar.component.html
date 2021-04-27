@@ -1,7 +1,6 @@
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
     <ul>
         <li><a href="#home">За мен</a></li>
-        <li><a href="#news">Образование</a></li>
         <li><a href="#contact">Професионален опит</a></li>
         <li><a href="#about">Проекти</a></li>
     </ul>
@@ -11,7 +10,6 @@
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
     <ul>
         <li><a href="#home" (click)="changeNavContent(navigationContentType.AboutMe)">About me</a></li>
-        <li><a href="#news" (click)="changeNavContent(navigationContentType.Education)">Education</a></li>
         <li><a href="#contact" (click)="changeNavContent(navigationContentType.ProffesionalCareer)">Professional career</a></li>
         <li><a href="#about" (click)="changeNavContent(navigationContentType.Projects)">Projects</a></li>
     </ul>
@@ -24,9 +22,6 @@
     <div class="navigation-content-container">
         <div *ngIf="navigationContentChoosen == navigationContentType.AboutMe">
             Born in Lom city in Bulgaria.
-        </div>
-
-        <div *ngIf="navigationContentChoosen == navigationContentType.Education">
             Master of Engineering at the Technical University of Sofia 2020
         </div>
         <div *ngIf="navigationContentChoosen == navigationContentType.ProffesionalCareer">
@@ -35,6 +30,10 @@
             Developing front-end and back-end projects for banking industry.
             <br>
             Managing databases.
+            Technology stack:
+            - JAVA - Spring Boot
+            - Oracle           
+            - Angular 4+
         </div>
         <div *ngIf="navigationContentChoosen == navigationContentType.Projects">
             Education android apps
@@ -53,7 +52,7 @@
             <br>
             Animals in Spanish learning quiz
             <br>
-            
+
 
         </div>
     </div>
