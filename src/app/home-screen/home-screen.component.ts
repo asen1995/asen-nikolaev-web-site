@@ -9,16 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class HomeScreenComponent implements OnInit {
 
   appLanguageEnum = AppLanguage;
-  appLanguage :AppLanguage;
+  appLanguage: AppLanguage;
 
+  showHomeScreen: boolean;
   constructor() { }
 
-  ngOnInit(): void {  
-   this.appLanguage = AppLanguage.English;
+  ngOnInit(): void {
+    this.showHomeScreen = false;
+    this.appLanguage = AppLanguage.English;
+
+    setTimeout(() => {
+      this.showHomeScreen = true;
+    }, 1500);
+
   }
 
-
-  changeLanguage(appLanguage : AppLanguage){
+  changeLanguage(appLanguage: AppLanguage) {
     this.appLanguage = appLanguage;
   }
 

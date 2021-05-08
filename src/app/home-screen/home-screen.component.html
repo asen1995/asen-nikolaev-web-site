@@ -1,31 +1,38 @@
+<app-loading-sceen *ngIf="!showHomeScreen">
 
+</app-loading-sceen>
 
-<div class="profile-div" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
+<div id="web-site-content" *ngIf="showHomeScreen">
+
+    <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.Bulgarian">
         <div id="flags-box">
-                <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
-            
-                <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
-            </div>
-    <div class="pic-name">
-        <img class="profile-picture" src="assets/asen-costume.jpg" />
-        <p class="text-name">Асен Николаев</p>
-        <p class="text-name">Софтуерен инженер</p>
-    </div>
-</div>
+            <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
 
-<div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
+            <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
+        </div>
+        <div class="pic-name">
+            <img class="profile-picture" src="assets/asen-costume.jpg" />
+            <p class="text-name">Асен Николаев</p>
+            <p class="text-name">Софтуерен инженер</p>
+        </div>
+    </div>
+
+    <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
         <div id="flags-box">
-                <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
-            
-                <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
-            </div>
-    <div class="pic-name">
-        <img class="profile-picture" src="assets/asen-costume.jpg" />
-        <p class="text-name">Asen Nikolaev</p>
-        <p class="text-name">Software engineer</p>
+            <img class="bg-flag" src="assets/flags/bg.jpg" (click)="changeLanguage(appLanguageEnum.Bulgarian)" />
+
+            <img class="en-flag" src="assets/flags/en.jpg" (click)="changeLanguage(appLanguageEnum.English)" />
+        </div>
+        <div class="pic-name">
+            <img class="profile-picture" src="assets/asen-costume.jpg" />
+            <p class="text-name">Asen Nikolaev</p>
+            <p class="text-name">Software engineer</p>
+        </div>
     </div>
+
+    <app-navigation-bar [appLanguage]="appLanguage"></app-navigation-bar>
+
+    <app-footer [appLanguage]="appLanguage"></app-footer>
+
+
 </div>
-
-<app-navigation-bar [appLanguage]="appLanguage"></app-navigation-bar>
-
-<app-footer [appLanguage]="appLanguage" ></app-footer>
