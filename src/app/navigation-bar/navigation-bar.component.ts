@@ -18,6 +18,7 @@ export class NavigationBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.navigationContentChoosen = NavigationContentType.AboutMe;
   }
 
 
