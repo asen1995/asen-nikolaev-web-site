@@ -1,10 +1,13 @@
 import { AppLanguage } from './../utils/AppLanguage';
 import { Component, OnInit } from '@angular/core';
+import { Animations } from '../animation/animation';
+
 
 @Component({
   selector: 'app-home-screen',
   templateUrl: './home-screen.component.html',
-  styleUrls: ['./home-screen.component.scss']
+  styleUrls: ['./home-screen.component.scss'],
+  animations: [Animations.ElementFadeIn]
 })
 export class HomeScreenComponent implements OnInit {
 
