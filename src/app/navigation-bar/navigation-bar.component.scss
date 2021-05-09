@@ -28,6 +28,10 @@ ul {
     background-color: #111;
   }
 
+  li a:active {
+    background-color: yellow;
+    color:#111;
+  }
  
   .navigation-content-container{
     padding: 2%;
