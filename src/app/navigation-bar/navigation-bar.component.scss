@@ -38,9 +38,30 @@
   }
 
   .android-app-icon{
-   width: 19%;
+   width: 55%;
    border-radius: 15px;
    padding-top: 3%;
    padding-bottom: 3%;
    border-radius: 30%;
   }
+
+
+  .android-apps-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type:none;
+    display:flex;
+    justify-content: center;  
+    text-align: center;  
+  }
+
+  .android-app-item {   
+    display: list-item;
+    color:white;  
+    }
+
+    .education-apps-title{
+      text-align: center;
+    }

@@ -9,8 +9,10 @@
 
 <div class="profile-div" *ngIf="appLanguage == appLanguageEnum.English">
     <ul class="navigation-bar-ul">
-        <li class="navigation-bar-li"><a href="#home" (click)="changeNavContent(navigationContentType.AboutMe)">About me</a></li>
-        <li class="navigation-bar-li"><a href="#contact" (click)="changeNavContent(navigationContentType.ProffesionalCareer)">Professional career</a></li>
+        <li class="navigation-bar-li"><a href="#home" (click)="changeNavContent(navigationContentType.AboutMe)">About
+                me</a></li>
+        <li class="navigation-bar-li"><a href="#contact" (click)="changeNavContent(navigationContentType.ProffesionalCareer)">Professional
+                career</a></li>
         <li class="navigation-bar-li"><a href="#about" (click)="changeNavContent(navigationContentType.Projects)">Projects</a></li>
     </ul>
 </div>
@@ -51,22 +53,23 @@
             - Angular 4+
         </div>
         <div *ngIf="navigationContentChoosen == navigationContentType.Projects">
-            Education android apps in Google play
+            <div class="education-apps-title"> Education android apps in Google play
+            </div>
             <br>
-            <ul>
+            <ul class="android-apps-list">
 
-                <li>
+                <li class="android-app-item">
                     <div>
                         <a href="https://play.google.com/store/apps/details?id=com.asennikolaev.learninganimals" target="popup">
                             <img class="android-app-icon" alt="app" src="https://play-lh.googleusercontent.com/YECtjvheFDoz45Bfdxrhtg0OFCbAbWc_oBq8PdDJxiU_chZS0B5n3aY-L0pW09U83f1A=s180-rw" />
                         </a>
                         <br>
 
-                        <span class="application-name"> Animals in English learning quiz d </span>
+                        <span class="application-name"> Animals in English learning quiz </span>
 
                     </div>
                 </li>
-                <li>
+                <li class="android-app-item">
                     <div>
                         <a href="https://play.google.com/store/apps/details?id=com.asennikolaev.learninganimals.spanish"
                             target="popup">
