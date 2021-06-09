@@ -1,4 +1,4 @@
-ul {
+.navigation-bar-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -9,13 +9,13 @@ ul {
     justify-content: center;    
   }
   
-  li {   
+  .navigation-bar-li {   
   display: list-item;
   background: rgb(100, 100,109); 
   color:white;  
   }
   
-  li a {
+  .navigation-bar-li a {
     display: block;
     color: white;
     text-align: center;
@@ -24,11 +24,11 @@ ul {
   }
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+  .navigation-bar-li a:hover {
     background-color: #111;
   }
 
-  li a:active {
+  .navigation-bar-li a:active {
     background-color: yellow;
     color:#111;
   }
